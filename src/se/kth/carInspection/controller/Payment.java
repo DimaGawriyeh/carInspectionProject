@@ -1,7 +1,7 @@
 package se.kth.carInspection.controller;
 
 import se.kth.carInspection.integration.CreditCardDTO;
-import se.kth.carInspection.model.CreditCardPayment;
+import se.kth.carInspection.model.*;
 
 public class Payment {
 
@@ -20,7 +20,8 @@ public class Payment {
     }
 
     public int payCash(int amount) {
-
+      CashPayment cashPayment=new CashPayment(amount);
+      return cashPayment.payCash(amount);
     }
 
     public boolean getPaymentStatus() {

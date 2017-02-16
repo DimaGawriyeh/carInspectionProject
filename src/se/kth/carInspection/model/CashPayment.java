@@ -35,6 +35,13 @@ public class CashPayment {
         return totalCost;
         
     }
+     
+     public int payCash(int amount){
+         int change=getChange(amount);
+         updateCashPresent();
+         return change;
+         
+     }
 
    
 }
