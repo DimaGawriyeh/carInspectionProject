@@ -1,4 +1,4 @@
-package se.kth.carInspection.integration;
+package se.kth.carInspection.controller;
 /**
  * Write a description of class InspectorDTO here.
  * 
